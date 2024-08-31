@@ -1,0 +1,91 @@
+/* General styling for the password generator */
+.password-generator {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+/* Center align the heading */
+.password-generator h2 {
+  text-align: center;
+}
+
+/* Styling for labels */
+.password-generator label {
+  display: block;
+  margin-top: 15px;
+  font-size: 1em; /* Default font size for better readability */
+}
+
+/* Styling for number input */
+.password-generator input[type="number"] {
+  width: 100%;
+  padding: 8px; /* Increased padding for better touch targets */
+  margin-top: 5px;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+/* Styling for checkbox input */
+.password-generator input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Styling for buttons */
+.password-generator button {
+  display: block;
+  width: 100%;
+  padding: 12px; /* Slightly increased padding */
+  margin-top: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em; /* Ensure button text is readable */
+}
+
+/* Button hover effect */
+.password-generator button:hover {
+  background-color: #45a049;
+}
+
+/* Result section styling */
+.result {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Password display styling */
+#password-display {
+  margin-top: 10px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 5px;
+  font-family: monospace;
+  font-size: 1.2em; /* Ensure text is readable */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .password-generator {
+    padding: 15px; /* Reduce padding on smaller screens */
+  }
+
+  .password-generator label {
+    font-size: 0.9em; /* Slightly smaller font size */
+  }
+
+  .password-generator input[type="number"],
+  .password-generator button {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  #password-display {
+    font-size: 1em; /* Adjust font size for smaller screens */
+  }
+}
